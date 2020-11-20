@@ -1376,7 +1376,7 @@ class Match():
                             'Error'] = "Cannot pass until Deck is empty."
                     elif len(self.players[self.turn].getAllValidCards()) > 0:
                         self.elements[
-                            'Error'] = "Cannot pass while having playable cards."
+                            'Error'] = "Think again! Cannot pass while having playable cards."
                     else:
                         self.turnComplete = True
                         self.passes += 1
@@ -1396,7 +1396,7 @@ class Match():
                             self.turnComplete = True
                         else:
                             self.elements[
-                                'Error'] = "Card Doesn't Match The Color {} or Value {}!".format(
+                                'Error'] = "Girl, try again! Card Doesn't Match The Color {} or Value {}!".format(
                                     self.currentColor, self.currentValue)
                     else:
                         pass
